@@ -1,0 +1,284 @@
+body{
+	background: #000;
+
+}
+
+
+.logo{
+	cursor: pointer;
+	color: #fff;
+	right: 0;
+	font-size: 16px;
+	font-weight: 750;
+
+}
+
+li, a {
+	font-family: monospace,sans-serif;
+	font-weight: 700;
+	font-size: 19px;
+	color: #fff;
+	right: 0;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+	display: inline-block;
+	padding: 0px 20px;
+	list-style: none;
+	padding: 10px 55px;
+}
+
+header{
+
+	justify-content: space-between;
+	align-items: right;
+	
+}
+
+ li a:hover{
+	background: #fff;
+	color: #000;
+	border-radius: 20%;
+}
+
+section{
+	height: 100;
+	overflow: hidden;
+}
+
+section:before{
+	content:'';
+	position: absolute;
+	bottom: -260px;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top,#30171B,transparent);
+	z-index: 1000;
+
+}
+
+
+
+.bg img{
+
+	width: 110vw;
+	height: 110vh;
+	filter: brightness(0.4);
+
+}
+
+
+.mars{
+	position: absolute !important;
+	left: 10vw !important;
+	top: 4vh !important
+}
+
+.mars img{
+	width: 80%;
+	filter: brightness(0.6);
+
+}
+
+
+.text h1{
+	font-family: "AlphaCentauri" !important;
+	font-size: 7vw;
+	color: #fff;
+	letter-spacing: 10px;
+	position: absolute;
+	top: 8vh;
+	left: 70vh;
+	
+}
+
+.venus img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 34vw;
+	top: 25vh;
+	z-index: 1;
+	filter: brightness(0.6);
+}
+
+
+
+.bg2 {
+	top: unset !important;
+	left: -150px !important;
+	right: -150px !important;
+	bottom: -100px ; 
+
+
+
+}
+.bg2 img{
+	width: 100%; 
+	z-index: 2;
+	left:-20px;
+	right:-20px;
+	top: 20vh; !important;
+	filter: brightness(0.9);
+
+}
+
+.theory h2{
+	font-size: 1.5cm;
+	color: #fff;
+
+}
+
+.theory p{
+	font-size: 0.7cm;
+	color: #000;
+	text-align: left;
+	font-family: monospace;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+}
+
+.theory div{
+	font-weight: bold;
+	font-family: sans-serif;
+	width: 100%;
+	height: 100vh;
+
+}
+
+.dashboard {
+	position: relative;
+	padding: 100px;
+	background: #30171B;
+	opacity: 100%;
+
+}
+
+.dashboard img{
+	border-radius: 50%;
+}
+
+	
+.globe {
+	background-image: url("mars2.jpg");
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-direction: linear;
+	animation-iteration-count: infinite;
+	transition: transform 200ms linear;
+	transform-style: preserve-3d ;
+	background-size: cover;
+	border-radius: 90%;
+	filter: drop-shadow(-80px -80px 80px black);
+
+
+}
+
+@keyframes rotate{
+	0%{
+		background-position: 0 0px;
+	}
+
+	100%{
+		background-position: 500px 0;
+	}
+}
+
+.dashboard h1{
+	font-size: 0.7cm;
+	font-family: agency fb;
+	left: 60vw;
+	color: #fff ;
+
+}
+
+.dashboard p{
+	text-align: center;
+	font-size: 0.5cm;
+	font-family: agency fb;
+	color: #fff;
+	opacity: 90%;
+	font-weight: 50%;
+}
+
+.p3 {
+	background-image: url("surface.jpg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: brightness(0.8);
+	background-attachment: fixed;
+
+}
+
+	@keyframes motion{
+		from{
+			opacity: 0;
+			transform: translateY(-20px);
+		}
+		to{
+			opacity: 1;
+			transform: translateY(20px);
+		}
+	}
+
+	@keyframes motion2{
+		0%{
+			transform: translate(0%, 0%) rotate(360deg);
+		}
+		25%{
+			transform: translate(5%, 15%) rotate(360deg);
+		}
+		50%{
+			transform: translate(10%, 5%) rotate(360deg);
+		}
+		75%{
+			transform: translate(0%, 15%) rotate(360deg);
+		}
+		100%{
+			transform: translate(0%, 0%) rotate(360deg);
+		}
+	}
+
+
+.p4 {
+	background-color: #30171B;
+	background-size: cover;
+	backface-visibility: 50%;
+	
+	
+}
+
+.p4 img{
+	width: 300px; 
+	height: 300px;  
+	border-color: #fff;
+	border-width: 20px;
+	border: 3px solid #fff;
+	opacity: 100%;
+
+}
+
+.p4 img:hover{
+	width: 650px;
+	height: 450px;
+	margin-top: -30px;
+	margin-left: -90px;
+	top: 45%;
+	left: 85%;
+	opacity:60% ;
+
+}
+
+
+
+.p5 {
+	background-image: url("surface2.jpg");
+	background-size: auto;
+	background-attachment: fixed;
+	filter: brightness(0.8);
+	
+	
+}
+
+
+
+
